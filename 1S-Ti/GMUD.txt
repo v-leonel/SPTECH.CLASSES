@@ -1,8 +1,0 @@
-GMUD
-
-data do gmud
-
-nome do responsável da gmud
-
-classificação gmud - emergencial, padrão, normal
-

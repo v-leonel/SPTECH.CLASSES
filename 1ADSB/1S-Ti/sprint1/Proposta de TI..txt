@@ -1,0 +1,12 @@
+Proposta de TI.
+
+contexto - infraestrutura tecnologica.
+
+projeto - sistema iot com sensor de presença para calcular média de tempo
+de almoço dos alunos.
+
+justificativa - pegar essa base de dados do sistema e utilizar
+para organizar a logistica dos horarios de almoço dos alunos.
+
+Objetivo - para melhorar o sistema de logistica da quantidade maxima
+de alunos que caberia no espaço de almoço.

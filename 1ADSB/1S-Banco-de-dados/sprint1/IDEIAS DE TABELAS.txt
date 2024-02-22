@@ -1,0 +1,28 @@
+IDEIAS DE TABELAS
+
+ cliente
+ sensor
+ contrato
+
+ empresa(
+  nome_empresa
+  CNPJ
+  endereco
+  email 
+  razao_social
+  telefone
+)
+ 
+
+
+
+
+
+
+Links:
+
+desumidificador
+https://www.bryair.com.br/produtos/desumidificador-industrial-serie-ffb/?utm_source=google&utm_medium=cpc&utm_campaign=brasil&gclid=Cj0KCQjwi7GnBhDXARIsAFLvH4lHag35Lz7it9nRix0yFkGelDP3q03iCZXn-aH6eMdAB3gmWCyZeywaArFTEALw_wcB
+
+Controle de temperatura 
+https://dcmtech.com.br/equipamentos-e-sistemas-para-monitorar-temperatura-e-umidade/se-10-monitor-de-ambientes-com-acionamento-de-cargas/?gclid=Cj0KCQjwi7GnBhDXARIsAFLvH4lC23ZcZxQhImUngSK5MO1utln9769GVpLTuJek9PlSwR0mqjJwpyUaAt8nEALw_wcB
