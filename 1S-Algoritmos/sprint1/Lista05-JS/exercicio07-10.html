@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite o saldo da conta: </span><input type="number" id="input_saldo"><br>
+
+    <button onclick="exibir()">Verificar finanças</button><br>
+
+    <div id="div_financas"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var saldo = Number(input_saldo.value)
+        
+        if(saldo < 0){
+            div_financas.innerHTML = `
+            <span style="color:#ff0000;">Saldo negativo</span>
+            `
+        }else{
+            div_financas.innerHTML = `
+            <span style="color:#0000ff;">Saldo positivo</span>
+            `
+        }
+        if(saldo == 0){
+            div_financas.innerHTML = `
+            Conta zerada
+            `
+        }
+    }
+
+</script>

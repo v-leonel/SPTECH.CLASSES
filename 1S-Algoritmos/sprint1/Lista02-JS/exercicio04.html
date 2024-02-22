@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite o logradouro: </span><input id="input_logradouro" type="text"> <br>
+    <span>Digite o numero: </span><input id="input_numero" type="text"> <br>
+
+    <button onclick="exibir()">Onde eu moro</button>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        alert(`Seu logradouro é ${input_logradouro.value}`);
+        alert(`O número do seu logradouro é ${input_numero.value}`);
+    }
+
+</script>

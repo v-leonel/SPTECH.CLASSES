@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tênis Clube SPTECH</title>
+  <style>
+    body {
+      display: flex;
+      align-items: stretch;
+    }
+
+    body div:first-child,
+    body div:nth-of-type(2) {
+      padding: 8px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    body div:nth-of-type(2) {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="input_qtd_partidas">
+      Rodadas máximas:
+      <input id="input_qtd_partidas" /><br />
+    </label>
+
+    <button onclick="realizar_partida()">Realizar partida</button>
+
+    <h3>Informe as partidas que deseja relembrar</h3>
+
+    <label for="input_inicio_intervalo">Início:</label>
+    <input id="input_inicio_intervalo" />
+    <label for="input_fim_intervalo">Fim:</label>
+    <input id="input_fim_intervalo" />
+
+    <button onclick="relembrar_partidas()">Relembrar</button>
+  </div>
+  <div>
+    <h3>Painel</h3>
+    <div id="div_painel"></div>
+    <div id="total_pontuacao"></div>
+  </div>
+</body>
+
+</html>
+<script>
+
+  var listaRodada = [];
+  var soma1 = 0;
+  var soma2 = 0;
+  var listaPartidas = [];
+
+  function realizar_partida() {
+    var qtdRodada = Number(document.getElementById('input_qtd_partidas').value);
+    var encontrarRodada = false;
+
+    if (qtdRodada <= 0) {
+      alert('Número de partidas inválido');
+    } else {
+      for (var i = 0; i < listaRodada.length; i++) {
+        if (listaRodada[i] <= qtdRodada) {
+          encontrarRodada = true;
+          break;
+        }
+      }
+      if (encontrarRodada) {
+        alert(`Número de partidas excedido!`);
+      } else {
+        listaRodada.push(qtdRodada);
+
+        for (var i = 0; i < qtdRodada; i++) {
+          var max1 = 10;
+          var min1 = 1;
+          var intervalo1 = (max1 - min1) + 1;
+          aleatorio1 = Number(parseInt(Math.random() * intervalo1 + min1));
+
+          var max2 = 10;
+          var min2 = 1;
+          var intervalo2 = (max2 - min2) + 1;
+          aleatorio2 = Number(parseInt(Math.random() * intervalo2 + min2));
+
+          soma1 += aleatorio1;
+          soma2 += aleatorio2;
+
+          div_painel.innerHTML += `Rodada ${[i + 1]}:<br>`;
+          div_painel.innerHTML += `Jogador 1: ${aleatorio1}<br>`;
+          div_painel.innerHTML += `Jogador 2: ${aleatorio2}<br>`;
+          listaPartidas.push(i);
+        }
+        div_painel.innerHTML += `Total jogador 1 ${soma1}<br>`;
+        div_painel.innerHTML += `Total jogador 2 ${soma2}<br>`;
+        atualizarPontuacaoTotal();
+      }
+    }
+  }
+
+  function relembrar_partidas() {
+    div_painel.innerHTML = '';
+    var max = Number(document.getElementById('input_inicio_intervalo').value);
+    var min = Number(document.getElementById('input_fim_intervalo').value);
+
+    for (var i = min; i <= max; i++) {
+      div_painel.innerHTML += `Rodada ${[i]}:<br>`;
+      div_painel.innerHTML += `Jogador 1: ${aleatorio1}<br>`;
+      div_painel.innerHTML += `Jogador 2: ${aleatorio2}<br>`;
+    }
+  }
+
+  function atualizarPontuacaoTotal() {
+    document.getElementById('total_pontuacao').innerHTML = `Total Geral:<br>`;
+    document.getElementById('total_pontuacao').innerHTML += `Total jogador 1 ${soma1}<br>`;
+    document.getElementById('total_pontuacao').innerHTML += `Total jogador 2 ${soma2}<br>`;
+  }
+
+</script>

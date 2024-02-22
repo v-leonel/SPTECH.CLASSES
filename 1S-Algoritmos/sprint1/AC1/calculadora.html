@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+</head>
+<body>
+    
+    <label for="racks">Digite a quantidade de racks: </label>
+    <input type="number" id="racks"><br><br>
+
+    <label for="area">Digite a área da sua sala de servidores: </label>
+    <input type="number" id="area"><br><br>
+
+    <label for="servidores">Digite a quantidade de servidores: </label>
+    <input type="number" id="servidores"><br><br>
+
+    <button onclick="precificar()">Calcule seu orçamento</button>
+
+    <div id="resultado"></div>
+
+</body>
+</html>
+
+<script>
+    
+    function precificar(){
+        var quantidadeSensor =  Number(racks.value) * 6;
+        var quantidadeDesumidificador = Math.ceil(Number(area.value) / 90);
+        var quantidadeArCondicionado = Math.ceil(Number(servidores.value) * 600 / 12000);
+        var valorDashboard = 2000;
+        var instalacao = 1000;
+        var valorTreinamento = 2000;
+        var valorFixo = valorDashboard + instalacao + valorTreinamento;
+        var precoTotal = quantidadeDesumidificador * 3000 + quantidadeArCondicionado * 4000 + quantidadeSensor * 80 + valorFixo; 
+    
+        resultado.innerHTML = `De acordo com as informações fornecidas seu orçamento será de ${precoTotal}`;
+
+    }
+
+</script>

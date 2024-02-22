@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quebra-Cabeça 3x3 com Drag and Drop</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #puzzle-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+    }
+
+    .puzzle-piece {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: grab;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="puzzle-container"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const puzzleContainer = document.getElementById("puzzle-container");
+      let draggingPiece = null;
+
+      // Números de 1 a 8 representam as peças do quebra-cabeça
+      const puzzlePieces = Array.from({ length: 8 }, (_, index) => index + 1);
+
+      // Adiciona uma peça vazia ao final da matriz para representar o espaço em branco
+      puzzlePieces.push(null);
+
+      // Embaralha as peças do quebra-cabeça
+      puzzlePieces.sort(() => Math.random() - 0.5);
+
+      // Cria as peças do quebra-cabeça no DOM
+      puzzlePieces.forEach((number, index) => {
+        const piece = document.createElement("div");
+        piece.className = "puzzle-piece";
+        piece.textContent = number || ""; // Exibe o número, exceto para a peça vazia
+        piece.setAttribute("draggable", "true");
+        piece.addEventListener("dragstart", () => startDrag(index));
+        piece.addEventListener("dragover", (e) => dragOver(e));
+        piece.addEventListener("drop", () => drop(index));
+        piece.addEventListener("dragend", () => endDrag());
+        puzzleContainer.appendChild(piece);
+      });
+
+      // Inicia o arrasto
+      function startDrag(index) {
+        draggingPiece = index;
+      }
+
+      // Lida com o evento dragover
+      function dragOver(e) {
+        e.preventDefault();
+      }
+
+      // Lida com o evento drop
+      function drop(index) {
+        if (isMoveValid(index, draggingPiece)) {
+          // Troca as posições da peça clicada e da peça arrastada
+          [puzzlePieces[index], puzzlePieces[draggingPiece]] = [puzzlePieces[draggingPiece], puzzlePieces[index]];
+
+          // Atualiza o DOM
+          updatePuzzle();
+
+          // Verifica se o jogador ganhou
+          if (checkWin()) {
+            alert("Parabéns! Você concluiu o quebra-cabeça!");
+          }
+        }
+
+        endDrag();
+      }
+
+      // Encerra o arrasto
+      function endDrag() {
+        draggingPiece = null;
+      }
+
+      // Verifica se o jogador ganhou
+      function checkWin() {
+        return puzzlePieces.every((piece, index) => piece === index + 1 || piece === null);
+      }
+
+      // Verifica se o movimento é válido
+      function isMoveValid(clickedIndex, emptyIndex) {
+        const rowClicked = Math.floor(clickedIndex / 3);
+        const colClicked = clickedIndex % 3;
+        const rowEmpty = Math.floor(emptyIndex / 3);
+        const colEmpty = emptyIndex % 3;
+
+        // Verifica se as peças estão na mesma linha ou coluna
+        return (
+          (rowClicked === rowEmpty && Math.abs(colClicked - colEmpty) === 1) ||
+          (colClicked === colEmpty && Math.abs(rowClicked - rowEmpty) === 1)
+        );
+      }
+
+      // Atualiza o DOM para refletir as mudanças no array de peças
+      function updatePuzzle() {
+        const pieces = document.querySelectorAll(".puzzle-piece");
+        pieces.forEach((piece, index) => {
+          piece.textContent = puzzlePieces[index] || "";
+        });
+      }
+    });
+  </script>
+</body>
+</html>

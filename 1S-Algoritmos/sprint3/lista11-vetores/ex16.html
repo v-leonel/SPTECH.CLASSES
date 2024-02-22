@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Digite um número qualquer: <input id="input_numero"><br>
+    <button onclick="analisar()">Analisar histórico</button><br>
+    <div id="mensagem"></div>
+</body>
+
+</html>
+<script>
+    var listaNumeros = [];
+
+    function analisar() {
+        mensagem.innerHTML = '';
+        listaNumeros.push(Number(input_numero.value));
+        var max = listaNumeros[0];
+        var min = listaNumeros[0];
+
+        for (var i = 0; i < listaNumeros.length; i++) {
+            mensagem.innerHTML += `${i + 1}° Número: ${listaNumeros[i]}<br>`;
+
+            if (listaNumeros[i] > max) {
+                max = listaNumeros[i];
+            }
+            if (listaNumeros[i] < min) {
+                min = listaNumeros[i];
+            }
+        }
+        mensagem.innerHTML += `Maior: ${max}<br>`
+        mensagem.innerHTML += `Menor: ${min}`
+    }
+</script>
+
+<!-- 
+    
+16. Crie um programa o qual: 
+
+a) Tenha um campo "Digite um número qualquer"; 
+
+b) Tenha um botão "Analisar histórico" que ao ser clicado, o 
+número é cadastrado em algum lugar e, em seguida, deve aparecer um 
+histórico dos números cadastrados, bem como o maior e o menor, como no exemplo a seguir: 
+
+   1º Número: 15 
+
+   2º Número: 22 
+
+   3º Número: 19 
+
+   4º Número: 5 
+
+ 
+
+   Maior: 22 
+
+   Menor: 5  -->

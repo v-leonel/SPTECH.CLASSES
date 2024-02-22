@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tênis Clube SPTECH</title>
+  <style>
+    body {
+      display: flex;
+      align-items: stretch;
+    }
+
+    body div:first-child,
+    body div:nth-of-type(2) {
+      padding: 8px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+
+    body div:nth-of-type(2) {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="input_qtd_partidas">
+      Rodadas máximas:
+      <input id="input_qtd_partidas" /><br />
+    </label>
+
+    <button onclick="realizar_partida()">Realizar partida</button>
+
+    <h3>Informe as partidas que deseja relembrar</h3>
+
+    <label for="input_inicio_intervalo">Início:</label>
+    <input id="input_inicio_intervalo" />
+    <label for="input_fim_intervalo">Fim:</label>
+    <input id="input_fim_intervalo" />
+
+    <button onclick="relembrar_partidas()">Relembrar</button>
+  </div>
+  <div>
+    <h3>Painel</h3>
+    <div id="div_painel"></div>
+    <div id="total_pontuacao"></div>
+  </div>
+</body>
+
+</html>
+<script>
+
+    var jogador1 = [];    
+    var jogador2 = [];
+
+    var total1 = 0;
+    var total2 = 0;
+
+    function realizar_partida(){
+        var max_rodada = Number(input_qtd_partidas.value);
+        
+        if (max_rodada > 0) {
+
+            if (jogador1.length < max_rodada) {
+                var max = 10;
+                var min = 1;
+                var intervalo = (max - min) + 1;
+
+                var aleatorio1 = parseInt(min + Math.random() * intervalo);
+                var aleatorio2 = parseInt(min + Math.random() * intervalo);
+
+                total1 += aleatorio1;
+                total2 += aleatorio2;
+
+                jogador1.push(aleatorio1);
+                jogador2.push(aleatorio2);
+
+                div_painel.innerHTML = '';
+
+                for (var i = 0; i < jogador1.length; i++){
+                    var pontos1 = jogador1[i];
+                    var pontos2 = jogador2[i];
+
+                    div_painel.innerHTML += `
+                    Rodada: ${i + 1}<br>
+                    Jogador1: ${pontos1}<br>
+                    Jogador2: ${pontos2}<br>
+                    <br>
+                    `
+                }
+                div_painel.innerHTML += `
+                Total Jogador 1: ${total1}<br>
+                Total Jogador 2: ${total2}<br>
+                <br>
+                `
+            } else {
+                alert('Número de partidas excedido');
+            }
+        } else {
+            alert('Número de partidas inválido');
+        }
+    }
+
+    function relembrar_partidas(){
+        var fim = input_fim_intervalo.value;
+        var inicio = input_inicio_intervalo.value;
+
+        for(var i = inicio - 1; i < fim; i++){
+            var pontos1 = jogador1[i];
+            var pontos2 = jogador2[i];
+
+            if(i + 1 >= inicio && i + 1 <= fim) {
+                div_painel.innerHTML += `
+                Rodada: ${i + 1}<br>
+                Jogador 1: ${pontos1}<br>
+                Jogador 2: ${pontos2}<br>
+                <br>
+                `
+            }
+        }
+    }
+
+</script>

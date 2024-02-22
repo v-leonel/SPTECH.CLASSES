@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="gerar()" >Sortear Nota para aluno</button>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+
+    function gerar(){
+        result.innerHTML = '';
+        var aleatorio = (Math.random() * 10).toFixed(1);
+        result.innerHTML += `${aleatorio}`
+    }
+
+</script>

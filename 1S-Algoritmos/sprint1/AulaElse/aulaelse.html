@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite nota 1</span><input id="input_n1" type="text"><br>
+    <span>Digite nota 2</span><input id="input_n2" type="text"><br>
+
+    <button onclick="exibir()">Verificar aprovação</button><br>
+
+    <div id="div_media"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var n1 = Number(input_n1.value)
+        var n2 = Number(input_n2.value)
+        var media = (n1 + n2) / 2
+
+        // if(media >=6){
+        //     div_media.innerHTML =`
+        //     APROVADO 
+        //     `
+        // }
+        // if(media < 6){
+        //     div_media.innerHTML = `
+        //     REPROVADO
+        //     `
+        // }
+
+        if(media >= 6){
+            div_media.innerHTML = `APROVADO`
+        }
+        else{
+            div_media.innerHTML = `REPROVADO`
+        }
+
+
+
+        
+    }
+
+</script>

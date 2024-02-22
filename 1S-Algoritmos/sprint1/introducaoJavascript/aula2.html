@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <span>Número 1:</span><input id="input_n1"> <br>
+    <span>Número 2:</span><input id="input_n2"> <br>
+    
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="somar()">Somar</button>    
+
+</body>
+</html>
+
+<script>
+
+
+    function multiplicar(){
+
+        alert(`
+            O produto entre ${input_n1.value} e ${input_n2.value}
+            resulta em ${(input_n1.value * input_n2.value)}
+        `);
+
+        // alert('O produto entre ' + input_n1.value + ' e ' + input_n2.value + ' resulta em ' + (input_n1.value * input_n2.value)) 
+    }
+    
+    function dividir(){
+
+        alert(`
+            O produto entre ${input_n1.value} e ${input_n2.value}
+            resulta em ${(input_n1.value / input_n2.value)}
+        `);
+
+        // alert('O razão entre ' + input_n1.value + ' e ' + input_n2.value + ' resulta em ' + (input_n1.value / input_n2.value))
+    }
+
+    function subtrair(){
+
+        alert(`
+            O produto entre ${input_n1.value} e ${input_n2.value}
+            resulta em ${(input_n1.value - input_n2.value)}
+        `);
+
+        // alert('O subtração entre ' + input_n1.value + ' e ' + input_n2.value + ' resulta em ' + (input_n1.value - input_n2.value))
+    }
+
+    function somar(){
+
+        alert(`
+            O produto entre ${input_n1.value} e ${input_n2.value}
+            resulta em ${(Number(input_n1.value) +  Number(input_n2.value))}
+        `);
+
+
+        // alert('O soma entre ' + input_n1.value + ' e ' + input_n2.value + ' resulta em ' + (Number(input_n1.value) + Number(input_n2.value)))
+    }
+
+    input_n1.value = ""
+    input_n2.value = ""
+
+</script>

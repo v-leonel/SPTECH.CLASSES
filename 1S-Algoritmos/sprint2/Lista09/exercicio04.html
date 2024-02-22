@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="esquerda()">Mover p/ Esquerda</button>
+    <button onclick="direita()">Mover p/ Direita</button>
+    Quantos pixels: <input type="number" id="input_px"><br>
+    <img src="bart.jpg" style="margin-left: 1px;" id="bart_img" alt="">
+</body>
+</html>
+<script>
+
+    var moverImg = 0;
+
+    function esquerda(){
+        moverImg -= Number(input_px.value);
+        
+        bart_img.style.marginLeft = moverImg + "px"
+    }
+
+    function direita(){
+        moverImg += Number(input_px.value);
+
+        bart_img.style.marginLeft = moverImg + "px" 
+    }
+
+</script>
+
+
+<!--     
+4) Crie um programa em HTML/JS o qual:
+a) Tenha, no topo da página os botões "Mover p/ Esquerda" e "Mover p/ Direita", lado a lado
+b) Ao lado dos botões, uma caixa de entrada de texto com a indicação "Quantos pixels"
+c) Abaixo de tudo isso uma figura do Bart Simpson num skate
+d) Ao clicar no "Mover p/ Esquerda", a figura do Bart se move para a esquerda em X pixels, conforme o valor da caixa de entrada de texto
+e) Ao clicar no "Mover p/ Direita", a figura do Bart se move para a direita em X pixels, conforme o valor da caixa de entrada de texto
+#FicaDica: Use a propriedade de estilo "margin-left", a qual, via Javascript é acessível com "marginLeft". -->
