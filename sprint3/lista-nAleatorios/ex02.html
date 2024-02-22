@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Sorteio um escudo - (spfc ou sccp ou santos ou palmeiras)
+    </h1>
+    <button onclick="gerar()">Sortear</button>
+    <div id="mensagem"></div>
+   
+</body>
+</html>
+<style>
+    img{
+        width: 150px;
+    }
+</style>
+<script>
+
+    function gerar(){
+        mensagem.innerHTML = '';
+        var escudo;
+        var max = 4;
+        var min = 1;
+        var intervalo = (max - min) + 1;
+        var aleatorio = parseInt(Math.random() * intervalo + min);
+
+        if(aleatorio == 1){
+            escudo = "./assets/corinthians.png"
+        }
+        else if(aleatorio == 2){
+            escudo = "./assets/palmeiras.jpg"
+        }
+        else if(aleatorio == 3){
+            escudo = "./assets/santos.png"
+        }
+        else{
+            escudo = "./assets/spfc.jpg"
+        }
+
+        mensagem.innerHTML += ` <img src="${escudo}" alt="">`
+    }
+
+</script>

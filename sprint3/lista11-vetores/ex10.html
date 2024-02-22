@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Linhas utilizadas na semana</h1>
+    Digite o nome das linhas utilizadas: <input id="input_nome_linhas"><br>
+    <button onclick="registrar()">Gravar busão</button><br>
+    Pesquisar linha: <input id="input_pesquisa_linha"><br>
+    <button onclick="pesquisar()">Pesquisar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+
+    var listaLinhas = [];
+
+    function registrar(){
+        mensagem.innerHTML = '';
+        var nomeLinha = input_nome_linhas.value;
+        listaLinhas.push(nomeLinha);
+        for(var i = listaLinhas.length -1; i >= 0; i--){
+            mensagem.innerHTML += `${listaLinhas[i]}<br>`
+        }
+    }
+
+    function pesquisar(){
+        mensagem.innerHTML = '';
+        var nomeLinha = input_nome.linhas.value;
+        var listaOcorrencia = [];
+
+        for(var i = 0; i < listaLinhas.length; i++){
+            if(listaLinhas[i] == nomeLinha){
+                listaOcorrencia.push(i + 1)
+            }
+        }
+        if(listaOcorrencia == 0){
+            mensagem.innerHTML += `Você nunca pegou essa linha`; 
+        }
+        else{
+            mensagem.innerHTML += `Você ja pegou essa linha ${listaOcorrencia.length} vezes, nessa ordem: ${listaOcorrencia}`;
+        }
+
+    }
+
+</script>
+<!-- 
+
+a) O usuário vá registrando os nomes das linhas de ônibus que ele 
+pegou durante a semana. Ele digita o nome da linha e clica em "Gravar busão";
+
+b) Cada vez que o botão é clicado o programa deve mostrar a 
+lista de linhas de ônibus abaixo do botão e em ordem inversa (do último para o primeiro); 
+
+c) Deve haver outro campo em que ele pesquisa por uma linha que já tenha pego. 
+Ao clicar em "Pesquisar", deve ver uma dessas frases, abaixo da lista de linhas de ônibus que já pegou: 
+
+   Você nunca pegou essa linha (caso não tenha cadastrado a linha em questão) 
+
+   OU 
+
+   Você já pegou essa linha 4 vezes, nessa ordem: 2, 4, 8, 9 
+
+   (supondo que ele cadastrou a mesma linha na 2ª vez, na 4ª vez, na 8ª vez e na 9ª vez). -->

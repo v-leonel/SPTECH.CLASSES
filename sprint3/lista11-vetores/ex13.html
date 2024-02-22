@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Campanha no campeonato</h1>
+    Indique o resultado: 
+    <select id="resultado">
+        <option value="3">Vitória</option>
+        <option value="1">Empate</option>
+        <option value="0">Derrota</option>
+    </select><br>
+    <button onclick="registrar()" >Registrar jogo</button><br>
+    Indique qual jogo deseja saber o resultado: <input oninput="encontrarJogo()" id="input_jogo"><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+
+    var listaResultado = [];
+    var totalVitoria = 0;
+    var totalEmpate = 0;
+    var totalDerrota = 0;
+    var pontuacao = 0;
+
+    function registrar(){
+        mensagem.innerHTML = '';
+        var resultadoJogo = resultado.value
+        listaResultado.push(resultadoJogo);
+        for(var i = listaResultado.length -1; i < listaResultado.length; i++){
+            if(listaResultado[i] == 3){
+				totalVitoria++
+            }
+			else if(listaResultado[i]== 1){
+				totalEmpate++
+            }
+			else{
+				totalDerrota++
+
+            }
+			pontuacao += listaResultado[i]
+        }
+        var aproveitamento = pontuacao/(listaResultado.length*3)*100
+
+        mensagem.innerHTML += `O time teve: ${totalVitoria} vitórias, ${totalEmpate} empates, ${totalDerrota} derrotas<br>`;
+        mensagem.innerHTML += `Pontuação total: ${pontuacao} pontos<br>`;
+        mensagem.innerHTML += `Aproveitamento: ${aproveitamento}%<br>`
+    }
+
+    function encontrarJogo(){
+        var resultado = '';
+        var jogo = input_jogo.value;
+
+        if(listaResultado[jogo -1] == 3){
+            resultado = "Ganhou";
+        }
+        else if(listaResultado[jogo -1] == 1){
+            resultado = "Empatou";
+        }
+        else if(listaResultado[jogo -1] == 0){
+            resultado = "Perdeu";
+        }
+
+        if(resultado != ""){
+            mensagem.innerHTML += `No ${jogo} jogo, o time ${resultado}<br>`
+        }
+        else{
+            mensagem.innerHTML += `Não foi cadastrado um ${jogo} jogo<br>`
+        }
+    }
+
+</script>

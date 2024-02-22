@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o nome dos projetos criados: <input id="input_nome_projetos"><br>
+    <button onclick="registrar()">Registrar projetos</button><br>
+    <button onclick="exibir()">Mostrar projetos</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+
+    listaProjetos = [];
+
+    function registrar(){
+        mensagem.innerHTML = '';
+        listaProjetos.push(input_nome_projetos.value);
+        var experiencia = '';
+
+        for(var i = 0; i < listaProjetos.length; i++){
+            var qtdProjetos = listaProjetos.length;
+
+            if(qtdProjetos <= 4 && qtdProjetos >= 0 ){
+                experiencia = 'Júnior';
+            }
+            else if(qtdProjetos >= 5 && qtdProjetos <= 12){
+                experiencia = 'Pleno';
+            }
+            else{
+                experiencia = 'Sênior';
+            }
+            mensagem.innerHTML = 
+            `Voce ja fez ${qtdProjetos} projetos.
+            Por isso você é um profissional ${experiencia} 
+            `;
+        }
+    }
+    function exibir(){
+        for (var i = listaProjetos.length -1 ; i >= 0; i--){
+            mensagem.innerHTML += `<br>${listaProjetos[i]}`;
+        }
+    }
+
+
+</script>

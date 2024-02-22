@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="main">
+		<span>
+			<button onclick="videoGame.ligar()">Ligar</button>
+			<button onclick="jogo.iniciar()">Iniciar jogo</button>
+			<button onclick="controle.ligar()">Ligar controle</button>
+			<button onclick="jogo.pararDeJogar()">Parar de jogar</button>
+			<button onclick="controle.desligar()">Desligar controle</button>
+			<button onclick="videoGame.desligar()">Desligar</button>
+		</span>
+
+		<div id="conteudo">
+		</div>
+		<img style="width: 350px; visibility: hidden;" src="./gta6.webp" alt="">
+	</div>
+</body>
+
+</html>
+<style>
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	button {
+		margin: 20px;
+	}
+
+	#conteudo {
+		margin: 20px;
+	}
+
+	img {
+		margin: 20px;
+	}
+</style>
+<script>
+
+	const videoGame = {
+		nome: "PS5",
+		fabricante: "Sony",
+		ano: 2020,
+		preco: 5000,
+		cor: "Branco",
+		memoria: "825gb",
+		processador: "AMD Zen 2",
+		ligado: false,
+
+		ligar: function () {
+			if (this.ligado) {
+				conteudo.innerHTML = "O console já está ligado";
+			} else {
+				this.ligado = true;
+				conteudo.innerHTML = "O console foi ligado";
+			}
+		},
+		desligar: function () {
+			if (!this.ligado) {
+				conteudo.innerHTML = "O console já está desligado";
+			} else {
+				this.ligado = false;
+				conteudo.innerHTML = "O console foi desligado";
+				document.querySelector(`img`).style.visibility = "hidden";
+			}
+		}
+	}
+
+	const jogo = {
+		nome: "GTA6",
+		formato: "digital",
+		online: "Sim",
+		genero: "Ação",
+		tamanho: "154gb",
+		preco: 300,
+		plataforma: "PS5",
+		ano: 2025,
+		tempoJogado: 0,
+		iniciar: function () {
+			if (videoGame.ligado) {
+				conteudo.innerHTML = "O jogo foi iniciado <br> <br>";
+				document.querySelector(`img`).style.visibility = "visible";
+				this.tempoJogado += 1;
+				conteudo.innerHTML += "Tempo jogado: " + this.tempoJogado + " minutos";
+				conteudo.innerHTML += "<br> <br> Jogando: ";
+			} else {
+				conteudo.innerHTML = "O console precisa estar ligado para iniciar o jogo";
+			}
+		},
+
+		pararDeJogar: function () {
+			if (videoGame.ligado) {
+				conteudo.innerHTML = "O jogo foi parado";
+				document.querySelector(`img`).style.visibility = "hidden";
+
+			} else {
+				conteudo.innerHTML = "O console precisa estar ligado para parar de jogar";
+			}
+		}
+	}
+
+	const controle = {
+		nome: "DualSense",
+		fabricante: "Sony",
+		ano: 2020,
+		preco: 500,
+		cor: "Preto",
+		peso: "280g",
+		conexao: "Bluetooth",
+		compatibilidade: "PS5",
+		tipo: "Sem fio",
+		bateria: 100,
+		ligar: function (bateria) {
+			if (videoGame.ligado) {
+				conteudo.innerHTML = "O controle foi ligado <br> <br>";
+				if (this.bateria <= 0) {
+					conteudo.innerHTML = "<br> <br> A bateria acabou";
+				}
+				else {
+					this.bateria -= 10;
+					conteudo.innerHTML += "Bateria: " + this.bateria + "%";
+				}
+			} else {
+				conteudo.innerHTML = "O console precisa estar ligado para ligar o controle";
+			}
+		},
+		desligar: function () {
+			if (videoGame.ligado) {
+				conteudo.innerHTML = "O controle foi desligado";
+			} else {
+				conteudo.innerHTML = "O console precisa estar ligado para desligar o controle";
+			}
+		}
+	}
+
+</script>

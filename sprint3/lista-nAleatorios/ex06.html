@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="gerar()" >Sortear momento do dia</button><br>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+
+    function gerar(){
+        result.innerHTML = '';
+        var frase;
+        var max = 23;
+        var min =  0;
+        var intervalo = (max - min) + 1;
+        var aleatorio = parseInt(Math.random() * intervalo + min);
+        
+        if(aleatorio >= 0 && aleatorio <= 11){
+            frase = "Bom dia, flor do dia,"
+        }
+        else if(aleatorio <=17)[
+            frase = "Boa tarde, já vai tarde!"
+        ]
+        else{
+            frase = "Boa noite, durma bem!"
+        }
+
+        result.innerHTML += `${frase} são ${aleatorio}h!`
+    }
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Frutas.</h1>
+    Digite o nome de uma fruta: <input id="input_fruta"><br>
+    <button onclick="exibir()">Pesquisar</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+
+    var ListaFrutas = ["banana", "maçã", "melancia", "morango"];
+
+    function exibir(){
+        mensagem.innerHTML = '';
+        var fruta = input_fruta.value;
+        var encontrarFruta = false;
+        for (var i = 0; i < ListaFrutas.length; i++){
+            if(ListaFrutas[i] == fruta){
+                encontrarFruta = true
+                break;
+            }
+        }
+        if(encontrarFruta){
+            mensagem.innerHTML = `A fruta ${fruta} existe na lista`
+        }
+        else{
+            mensagem.innerHTML = `Não existe a fruta ${fruta} na lista`
+        }
+    }
+
+</script>
