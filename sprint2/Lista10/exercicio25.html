@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    vendas macarons: <input type="text" id="qtd_macarons"><br>
+    vendas Brigadeiros Gourmets: <input type="text" id="qtd_brigadeiros"><br>
+    vendas Cupcakes: <input type="text" id="qtd_cupcakes"><br>
+    vendas Cheesecakes: <input type="text" id="qtd_cheesecakes"><br>
+    preço da unidade Macarons: <input type="text" id="preco_macarons"><br>
+    preço da unidade Brigadeiros: <input type="text" id="preco_brigadeiros"><br>
+    preço da unidade Cupcakes: <input type="text" id="preco_cupcakes"><br>
+    preço da unidade Cheesecakes: <input type="text" id="preco_cheesecakes"><br>
+
+    <button onclick="exibirExtrato()">Verificar Vendas</button><br>
+
+    <div id="div_listagem"></div>
+</body>
+
+</html>
+<script>
+
+    function exibirExtrato() {
+        div_listagem.innerHTML = '';
+
+        var qtdMacarons = Number(qtd_macarons.value);
+        var qtdBrigadeiros = Number(qtd_brigadeiros.value);
+        var qtdCupcakes = Number(qtd_cupcakes.value);
+        var qtdCheesecakes = Number(qtd_cheesecakes.value);
+
+        var precoMacarons = Number(preco_macarons.value);
+        var precoBrigadeiros = Number(preco_brigadeiros.value);
+        var precoCupcakes = Number(preco_cupcakes.value);
+        var precoCheesecakes = Number(preco_cheesecakes.value);
+
+        var precoTotalMacarons = qtdMacarons * precoMacarons;
+        var precoTotalBrigadeiros = qtdBrigadeiros * precoBrigadeiros;
+        var precoTotalCupcakes = qtdCupcakes * precoCupcakes;
+        var precoTotalCheesecakes = qtdCheesecakes * precoCheesecakes;
+
+        var precoTotal = precoTotalMacarons + precoTotalBrigadeiros + precoTotalCupcakes + precoTotalCheesecakes;
+
+        var numeroVenda = 1;
+
+        if (
+            qtdMacarons < 0 ||
+            qtdBrigadeiros < 0 ||
+            qtdCupcakes < 0 ||
+            qtdCheesecakes < 0 ||
+            precoMacarons < 0 ||
+            precoBrigadeiros < 0 ||
+            precoCupcakes < 0 ||
+            precoCheesecakes < 0
+        ) {
+            alert('Não é permitido existirem valores negativos, insira um valor maior ou igual a zero.')
+        }
+        else {
+            while (qtdMacarons > 0) {
+                div_listagem.innerHTML += `Venda ${numeroVenda} - <img src="./assets/macaron.jfif" alt="Imagem de Macaron"> - R$${precoMacarons}<br>`
+                numeroVenda++;
+                qtdMacarons -=1;
+            }
+            while (qtdBrigadeiros > 0) {
+                div_listagem.innerHTML += `Venda ${numeroVenda} - <img src="./assets/brigadeiro.jfif" alt="Imagem de Brigadeiro"> - R$${precoBrigadeiros}<br>`
+                numeroVenda++;
+                qtdBrigadeiros -=1;
+            }
+            while (qtdCupcakes > 0) {
+                div_listagem.innerHTML += `Venda ${numeroVenda} - <img src="./assets/cupcake.jfif" alt="Imagem de Cupcake"> - R$${precoCupcakes}<br>`
+                numeroVenda++;
+                qtdCupcakes -=1;
+            }
+            while (qtdCheesecakes > 0) {
+                div_listagem.innerHTML += `Venda ${numeroVenda} - <img src="./assets/cheesecake.jfif" alt="Imagem de Cheesecake"> - R$${precoCheesecakes}<br>`
+                numeroVenda++;
+                qtdCheesecakes -=1;
+            }
+            qtdMacarons = Number(qtd_macarons.value);
+            qtdBrigadeiros = Number(qtd_brigadeiros.value);
+            qtdCupcakes = Number(qtd_cupcakes.value);
+            qtdCheesecakes = Number(qtd_cheesecakes.value);
+
+            div_listagem.innerHTML += `Com a quantidade de ${qtdMacarons} Macarons, ${qtdBrigadeiros} Brigadeiros, ${qtdCupcakes} Cupcakes e ${qtdCheesecakes} Cheesecakes, a venda totalizará R$${precoTotal}`
+        }
+    }
+
+</script>
+<style>
+    img {
+        width: 50px;
+    }
+</style>

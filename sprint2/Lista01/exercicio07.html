@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o valor que tem economizado: <input type="number" id="input_economia"><br>
+
+    <button onclick="exibir()">Poder de compra</button><br>
+
+    <div id="div_economia"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var economia = Number(input_economia.value);
+
+        if(economia <= 0){
+            div_economia.innerHTML = `Nada de compras`;
+        }
+        else if(economia <= 100){
+            div_economia.innerHTML = `Viajem de ida e volta pra Praia Grande`;
+        }
+        else if(economia < 4000){
+            div_economia.innerHTML += `<br>Uma boa moto usada`;
+        }
+        else{
+            div_economia.innerHTML += `<br>Mais alguma bobagem legal`
+        }
+
+    }
+
+</script>

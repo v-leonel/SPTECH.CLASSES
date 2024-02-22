@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite a temperatura: <input type="number" id="input_temperatura"><br>
+    <button onclick="exibir()">Verificar temperatura</button><br>
+
+    <div id="div_temperatura"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var temperatura = Number(input_temperatura.value);
+
+        if(temperatura < 14){
+            div_temperatura.innerHTML = `Congelante (até menos de 14ºC)`;
+        }
+        else if(temperatura <= 21){
+            div_temperatura.innerHTML = `Com Frio (entre 14ºC e 21ºC)`;
+        }
+        else if(temperatura <= 24){
+            div_temperatura.innerHTML = `Confortável (mais de 21ºC até 24ºC)`;
+        }
+        else if(temperatura <= 31){
+            div_temperatura.innerHTML = `Com Calor (mais de 24ºC até 31ºC)`;
+        }
+        else{
+            div_temperatura.innerHTML = `Calor escaldante (mais de 31ºC)`;
+        }
+            
+
+        
+    }
+
+</script>

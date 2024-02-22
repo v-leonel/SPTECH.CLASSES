@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Digite um numero: <input id="input_numero"><br>
+    Escreva uma frase: <input id="input_frase"><br>
+
+    <button onclick="exibir()">Papagaio/</button>
+
+    <div id="div_mensagem"></div>
+
+</body>
+
+</html>
+<script>
+
+    function exibir() {
+        var numero = Number(input_numero.value);
+        var frase = input_frase.value;
+        var repeticao = 1;
+
+        while (repeticao <= numero) {
+           alert(`${frase}`);
+            repeticao += 1;
+        }
+    }
+
+</script>

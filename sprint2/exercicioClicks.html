@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botao" onclick="validarClicks()">Clique em mim</button><br>
+
+    Cliques:<div id="div_clicks"></div>
+</body>
+</html>
+<script>
+
+    function validarClicks(){
+         var numeroClicks = Number(div_clicks.innerHTML);
+
+         div_clicks.innerHTML = numeroClicks + 1;
+    }
+
+</script>

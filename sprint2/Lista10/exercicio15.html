@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite a quantidade de elefantes: <input id="ipt_qtd"><br>
+    <button onclick="exibir()">Atazanar a médium</button><br>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var qtdElefantes = Number(ipt_qtd.value); 
+        var contador = 2;
+        var incomodam = 'incomodam,';
+        var sequenciaIncomodam = ' ' + incomodam;
+        
+        div_mensagem.innerHTML = "";
+
+        if(qtdElefantes < 1){
+            alert('Insira uma quantidade válida (maior que zero!!)');
+        }
+        else if(qtdElefantes == 1){
+            div_mensagem.innerHTML += `1 elefante incomoda muita gente` ;
+        }
+        else {
+            while (contador <= qtdElefantes){
+                div_mensagem.innerHTML += `<br>1 elefante incomoda muita gente` ;
+            if(contador > 1){
+                div_mensagem.innerHTML += `<br> ${contador} elefantes ${incomodam += sequenciaIncomodam} muito mais!`;
+            }
+            contador ++;
+            }
+        }
+    }
+
+</script>

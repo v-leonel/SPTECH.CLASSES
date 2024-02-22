@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Quisque Mirosmar - controle de vendas</h1>
+    <h2>Abertura do quiosque</h2>
+    Quantidade de água engarrafada: <input id="input_qtd_agua"><br>
+    Quantidade de coco fechado: <input id="input_qtd_coco"><br>
+    <button onclick="exibir()">Abrir quiosque</button><br>
+    <h2>Estoque Inicial</h2>
+    <div id="div_estoque_inicial"></div><br>
+    <h2>Registro das operações de venda</h2>
+    Entre com a quantidade vendida: <input id="input_qtd_venda">
+    Informe o produto vendido:
+    <select id="produto_selecionado">
+        <option value="Agua engarrafada">Água engarrafada</option>
+        <option value="Coco fechado">Coco fechado</option>
+    </select>
+    <button onclick="registrar()">Registrar venda</button>
+    <button onclick="encerrar()" style="background-color: red;">Encerrar turno</button>
+    <div id="div_registro_operacao"></div><br>
+</body>
+
+</html>
+<script>
+
+    var qtdAgua;
+    var qtdCoco;
+
+    function exibir() {
+        div_estoque_inicial.innerHTML = "";
+        div_registro_operacao.innerHTML = "";
+        qtdAgua = Number(input_qtd_agua.value);
+        qtdCoco = Number(input_qtd_coco.value);
+
+        if (qtdAgua < 100) {
+            alert('Com essa quantidade de Água engarrafada não dá para abrir o quiosque');
+        }
+        else if (qtdCoco < 200) {
+            alert('Com essa quantidade de Coco fechado não dá para abrir o quiosque');
+        }
+        else if (qtdAgua <= 1000) {
+            div_registro_operacao.innerHTML += 'Engarrafe mais água de coco<br>';
+            if (qtdCoco <= 2000) {
+                div_registro_operacao.innerHTML += 'Compre mais Cocos<br>';
+            }
+            div_estoque_inicial.innerHTML += `
+                    Água engarrafada: ${qtdAgua}<br>
+                    Coco fechado: ${qtdCoco}<br>
+                    `
+        }
+        else {
+            div_estoque_inicial.innerHTML += `
+                    Água engarrafada: ${qtdAgua}<br>
+                    Coco fechado: ${qtdCoco}<br>
+                    `
+        }
+    }
+    function registrar() {
+        var produtoSelecionado = produto_selecionado.value;
+        qtdVenda = Number(input_qtd_venda.value);
+
+        if (produtoSelecionado == 'Agua engarrafada') {
+            div_registro_operacao.innerHTML += `
+            Com a venda de ${vendaAgua} de ${produtoSelecionado} o saldo no estoque é de ${qtdAgua -= qtdVenda}<br>
+        `
+        }
+        else if (produtoSelecionado == 'Coco fechado') {
+            div_registro_operacao.innerHTML += `
+            Com a venda de ${vendaCoco} de ${produtoSelecionado} o saldo no estoque é de ${qtdCoco -= qtdVenda}<br>
+            `
+        }
+
+    }
+    function encerrar(){
+        div_registro_operacao.innerHTML = '';
+
+        div_registro_operacao.innerHTML += `
+        Vendas de Água engarrafada<br>
+        Saldo de produto no estoque: ${qtdAgua};<br>
+        Quantidade de vendas: ${vendaCoco * qtdVenda}<br>
+        Porcentagem das vendas: %<br>
+        <br><br>
+        Vendas de Coco fechado<br>
+        Saldo de produto no estoque: ${qtdCoco}<br>
+        Quantidade de vendas: ${vendaAgua * qtdVenda}<br>
+        Porcentagem das vendas:
+        `
+    }
+
+</script>
+<!--  
+d) Ao clicar no botão "Encerrar o Turno" faça:
+    d.1) Apague todas as mensagens na página; 
+    d.2) Exiba as seguintes mensagens: 
+
+        Vendas de Água engarrafada
+        Saldo de produto no estoque: XXXX 
+        Quantidade de vendas: YYYY
+        Porcentagem das vendas: ZZZZ
+        Vendas de Coco fechado 
+        Saldo de produto no estoque: XXXX 
+        Quantidade de vendas: YYYY
+        Porcentagem das vendas: ZZZZ -->
