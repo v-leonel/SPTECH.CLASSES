@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prova de SQL</title>
+</head>
+<body>
+    <h1>Prova de SQL - Questões de Modelagem de Dados, DCL, Tipos de Entidades e Atributos, e JOIN</h1>
+    <form id="quizForm" action="submit.php" method="post">
+        <ol>
+            <!-- Questão 1 -->
+            <li>
+                <h3>Questão 1: Modelagem de Dados</h3>
+                <p>Considere o seguinte esquema de tabela para um banco de dados de uma loja de produtos eletrônicos:<br><br>
+                Tabela 'Produto':<br>
+                - IDProduto (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Preço (Número)<br>
+                - Marca (Texto)<br>
+                - IDCategoria (Chave Estrangeira referenciando a tabela 'Categoria')<br><br>
+                Tabela 'Categoria':<br>
+                - IDCategoria (Chave Primária)<br>
+                - Nome (Texto)<br><br>
+                Pretende-se criar um novo produto chamado "Smartphone X" com preço de 899.99 e associá-lo à categoria "Telefonia". Qual seria a consulta SQL para realizar essa tarefa?</p>
+                <textarea name="q1" rows="4" cols="50"></textarea>
+            </li>
+            
+            <!-- Questão 2 -->
+            <li>
+                <h3>Questão 2: Data Control Language (DCL)</h3>
+                <p>Explique o propósito das declarações SQL GRANT e REVOKE. Como essas declarações afetam a segurança dos dados em um banco de dados?</p>
+                <textarea name="q2" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 3 -->
+            <li>
+                <h3>Questão 3: Tipos de Entidades e Atributos</h3>
+                <p>Em um sistema de gerenciamento de biblioteca, descreva a modelagem de dados para as entidades "Livro" e "Autor". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q3" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 4 -->
+            <li>
+                <h3>Questão 4: JOIN</h3>
+                <p>Considere as seguintes tabelas:<br><br>
+                Tabela 'Clientes':<br>
+                - IDCliente (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Email (Texto)<br><br>
+                Tabela 'Pedidos':<br>
+                - IDPedido (Chave Primária)<br>
+                - DataPedido (Data)<br>
+                - IDCliente (Chave Estrangeira referenciando a tabela 'Clientes')<br><br>
+                Qual consulta SQL você usaria para obter uma lista de todos os pedidos com os nomes dos clientes que fizeram esses pedidos?</p>
+                <textarea name="q4" rows="4" cols="50"></textarea>
+            </li>
+            
+            <!-- Questão 5 -->
+            <li>
+                <h3>Questão 5: Modelagem de Dados</h3>
+                <p>Em um sistema de gerenciamento de recursos humanos, descreva a modelagem de dados para as entidades "Funcionário" e "Departamento". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q5" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 6 -->
+            <li>
+                <h3>Questão 6: Data Control Language (DCL)</h3>
+                <p>Qual é a diferença entre as declarações SQL GRANT e REVOKE no contexto de controle de acesso a bancos de dados? Quando você usaria cada uma delas?</p>
+                <textarea name="q6" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 7 -->
+            <li>
+                <h3>Questão 7: Tipos de Entidades e Atributos</h3>
+                <p>Em um sistema de gerenciamento de inventário, descreva a modelagem de dados para as entidades "Produto" e "Fornecedor". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q7" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 8 -->
+            <li>
+                <h3>Questão 8: JOIN</h3>
+                <p>Considere as seguintes tabelas:<br><br>
+                Tabela 'Vendas':<br>
+                - IDVenda (Chave Primária)<br>
+                - DataVenda (Data)<br>
+                - IDProduto (Chave Estrangeira referenciando a tabela 'Produto')<br>
+                - Quantidade (Número)<br><br>
+                Tabela 'Produto':<br>
+                - IDProduto (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Preço (Número)<br><br>
+                Qual consulta SQL você usaria para obter o total de vendas de cada produto, juntamente com seus nomes?</p>
+                <textarea name="q8" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 9 -->
+            <li>
+                <h3>Questão 9: Modelagem de Dados</h3>
+                <p>Você está projetando um banco de dados para um sistema de gerenciamento de tarefas. Descreva as entidades e atributos necessários para modelar tarefas e suas atribuições a usuários.</p>
+                <textarea name="q9" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 10 -->
+            <li>
+                <h3>Questão 10: Data Control Language (DCL)</h3>
+                <p>Explique o papel das permissões (ou privilégios) em bancos de dados e como o SQL DCL é usado para controlar o acesso aos dados.</p>
+                <textarea name="q10" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 11 -->
+            <li>
+                <h3>Questão 11: Tipos de Entidades e Atributos</h3>
+                <p>Em um sistema de gerenciamento de escolas, descreva a modelagem de dados para as entidades "Estudante" e "Curso". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q11" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 12 -->
+            <li>
+                <h3>Questão 12: JOIN</h3>
+                <p>Considere as seguintes tabelas:<br><br>
+                Tabela 'Funcionários':<br>
+                - IDFuncionario (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Cargo (Texto)<br>
+                - IDSupervisor (Chave Estrangeira referenciando a própria tabela 'Funcionários' para representar a relação supervisor/subordinado)<br><br>
+                Qual consulta SQL você usaria para listar os nomes dos funcionários e seus supervisores, se houver?</p>
+                <textarea name="q12" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 13 -->
+            <li>
+                <h3>Questão 13: Modelagem de Dados</h3>
+                <p>Descreva como você modelaria as entidades "Cliente" e "Pedido" em um banco de dados de comércio eletrônico. Quais atributos cada entidade teria?</p>
+                <textarea name="q13" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 14 -->
+            <li>
+                <h3>Questão 14: Data Control Language (DCL)</h3>
+                <p>O que são roles (funções) em bancos de dados e como são usados para controlar o acesso aos dados? Dê um exemplo de como você concederia e revogaria permissões usando roles.</p>
+                <textarea name="q14" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 15 -->
+            <li>
+                <h3>Questão 15: Tipos de Entidades e Atributos</h3>
+                <p>Em um sistema de gerenciamento de eventos, descreva a modelagem de dados para as entidades "Evento" e "Participante". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q15" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 16 -->
+            <li>
+                <h3>Questão 16: JOIN</h3>
+                <p>Considere as seguintes tabelas:<br><br>
+                Tabela 'Pedidos':<br>
+                - IDPedido (Chave Primária)<br>
+                - DataPedido (Data)<br>
+                - IDCliente (Chave Estrangeira referenciando a tabela 'Clientes')<br><br>
+                Tabela 'Clientes':<br>
+                - IDCliente (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Email (Texto)<br><br>
+                Qual consulta SQL você usaria para listar os nomes dos clientes que fizeram pedidos em uma data específica?</p>
+                <textarea name="q16" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 17 -->
+            <li>
+                <h3>Questão 17: Modelagem de Dados</h3>
+                <p>Você está projetando um banco de dados para rastrear ativos de TI em uma empresa. Descreva as entidades e atributos necessários para modelar ativos e suas atribuições a departamentos.</p>
+                <textarea name="q17" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 18 -->
+            <li>
+                <h3>Questão 18: Data Control Language (DCL)</h3>
+                <p>Qual é o propósito do comando SQL GRANT ALL PRIVILEGES? Quais são os riscos associados à concessão desse privilégio?</p>
+                <textarea name="q18" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 19 -->
+            <li>
+                <h3>Questão 19: Tipos de Entidades e Atributos</h3>
+                <p>Em um sistema de gerenciamento de eventos, descreva a modelagem de dados para as entidades "Evento" e "Participante". Quais atributos cada uma dessas entidades teria?</p>
+                <textarea name="q19" rows="4" cols="50"></textarea>
+            </li>
+
+            <!-- Questão 20 -->
+            <li>
+                <h3>Questão 20: JOIN</h3>
+                <p>Considere as seguintes tabelas:<br><br>
+                Tabela 'Produtos':<br>
+                - IDProduto (Chave Primária)<br>
+                - Nome (Texto)<br>
+                - Preço (Número)<br>
+                - IDFornecedor (Chave Estrangeira referenciando a tabela 'Fornecedores')<br><br>
+                Tabela 'Fornecedores':<br>
+                - IDFornecedor (Chave Primária)<br>
+                - Nome (Texto)<br><br>
+                Qual consulta SQL você usaria para obter uma lista de produtos juntamente com os nomes dos fornecedores?</p>
+                <textarea name="q20" rows="4" cols="50"></textarea>
+            </li>
+        </ol>
+        <input type="submit" value="Submeter Respostas">
+    </form>
+</body>
+</html>
+ 

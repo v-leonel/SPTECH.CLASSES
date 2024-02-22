@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio9</title>
+</head>
+<body>
+    
+    <h1><b>Calcular média do aluno</b></h1>
+
+    <div>
+        <span>Digite a nota da avaliação continuada: </span><input id="input_continuada" type="text"><br>
+        <span>Digite a nota da avaliação semestral: </span><input id="input_semestral" type="text"><br>
+        <span>Digite seu nome: </span><input id="input_nome" type="text"><br>
+    </div>
+    
+    <button onclick="exibirMedia()">Calcule sua média</button>
+
+</body>
+</html>
+<script>
+
+    function exibirMedia(){
+        alert(`A média de ${input_nome.value} sera de ${(Number(input_continuada.value * 0.4) + Number(input_semestral.value * 0.6))}`);
+    }
+
+</script>
+
+
+<!------------------------------------------------------------------------------------------>
+<style>
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: normal;
+        flex-direction: column;
+    }
+    input{
+        width: 20%;
+        height: 20px;
+    }
+    button{
+        color: #fff;
+        background-color: gray;
+        border: gray;
+        width: auto;
+        margin: auto;
+        padding: 8px;
+    }
+</style>

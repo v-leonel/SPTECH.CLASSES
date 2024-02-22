@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Salário Mensal: <input type="number" id="salario_mensal"><br>
+        Dias Trabalhados no Mês: <input type="number" id="dias_trabalhados"> <br>
+        Férias Vencidas (sim ou não): <input type="text" id="ferias_vencidas"> <br>
+        Férias Proporcionais (sim ou não): <input type="text" id="ferias_proporcionais"><br>
+        Quantidade de Meses Trabalhados no Ano: <input type="number" id="meses_trabalhados"><br>
+        
+        <button onclick="exibir()">Calcular Rescisão</button>]
+
+        <div id="resultado"></div>
+
+    <script>
+        function exibir() {
+            var salarioMensal = Number(salario_mensal.value);
+            var diasTrabalhados = Number(dias_trabalhados.value);
+            var feriasVencidas = (ferias_vencidas.value);
+            var feriasProporcionais = (ferias_proporcionais.value);
+            var mesesTrabalhados = Number(meses_trabalhados.value);
+
+            // Calculo do saldo de salário
+            var saldoSalario = (salarioMensal / 30) * diasTrabalhados;
+
+            // Calculo das férias vencidas
+            var valorFeriasVencidas = feriasVencidas ? (salarioMensal + (salarioMensal / 3)) : 0;
+
+            // Calculo das férias proporcionais
+            let valorFeriasProporcionais = 0;
+            if (feriasProporcionais) {
+                const salarioUltimos12Meses = salarioMensal * mesesTrabalhados;
+                valorFeriasProporcionais = (salarioUltimos12Meses / 3) - (salarioUltimos12Meses / 3) / 3;
+            }
+
+            // Calculo do décimo terceiro proporcional
+            const decimoTerceiroProporcional = (salarioMensal / 12) * mesesTrabalhados;
+
+            // Calculo do total
+            const total = saldoSalario + valorFeriasVencidas + valorFeriasProporcionais + decimoTerceiroProporcional;
+
+            // Exibir resultados na tela
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = `
+                <p>O saldo de salário recebido será de R$${saldoSalario.toFixed(2)}</p>
+                <p>O valor de férias vencidas será de R$${valorFeriasVencidas.toFixed(2)}</p>
+                <p>O valor das férias proporcionais será de R$${valorFeriasProporcionais.toFixed(2)}</p>
+                <p>O valor do 13º proporcional será de R$${decimoTerceiroProporcional.toFixed(2)}</p>
+                <p>A soma total de todos os valores será de R$${total.toFixed(2)}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+Contextualização Projeto de PI
+	
+Desumidificação e controle de temperatura em Data Centers
+
+Qual é o problema e onde esta?
+
+ Oxidação de fios e cabos, curtos-circuitos, incêndios e por 
+consequência perda de dados em DataCenters e indisponibilidade de sistemas.
+
+Quem sofre com este problema? Quem é o principal afetado?
+
+ empresas que contém DataCenters, e os clientes que dependem dos 
+dados destes Datacenters
+
+Este problema tende a aumentar ou diminuir?
+
+ Tende a diminuir pois ja existem empresas que estão utilizando de equipamentos
+para evitar este tipo de acidente
+
+Quanto custa este problema?
+ 
+ Este problema tende a custar muito caro. De acordo com algumas pesquisas feitas pelo instituto Ponemon, apenas em periodo de downtime - tempo em que o Data Center fica inacessível por determinado período - na pesquisa global de 2022 o custo médio de um Data center em downtime foi de £6.850 por minuto equivalente a R$42.213 na conversão atual. Pensando em um caso de perca total do Data Center o custo seria incalculável.
+
+O problema afeta os aspectos de sustentabilidTade?
+
+ Sim, além de ser um problema que o custo médio é inestimavél,
+acidentes em Data centers podem causar consequências tanto na economia global, nacional e problemas na natureza como incêndios.
+
+Ja existe algum movimento para resolver?
+  
+ sim, melhoria de equipamentos, atualização tecnológica e capacitação de funcionários para lidar com situações adversas.
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite a frequência</span><input type="text" id="input_freq_aluno"><br>
+
+    <button onclick="exibir()">Analisar frequência</button><br>
+    
+    <div id="div_freq"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var frequencia = Number(input_freq_aluno.value);
+
+        if(frequencia < 50){
+            div_freq.innerHTML = `
+            <span> <img src="turista.jpg" ></span>
+            `
+        }else{
+            div_freq.innerHTML = `
+            <span><img src="estudioso.jpg" ></span>
+            `
+        }
+    }
+    
+
+</script>

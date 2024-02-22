@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Digite o valor da renda familiar: </span><input id="input_renda_familiar"><br>
+    <span>Digite o valor da prestação: </span><input id="input_prestacao"><br>
+
+    <button onclick="exibir()">Verificar financiamento</button><br>
+
+    <div id="div_financiamento"></div>
+    <div id="div_cor_texto" style="color: red;"></div>
+</body>
+
+</html>
+<script>
+
+    function exibir() {
+
+        var rendaFamiliar = Number(input_renda_familiar.value)
+        var prestacao = Number(input_prestacao.value)
+        var porcentFinanciamento = prestacao / rendaFamiliar * 100
+
+        if (porcentFinanciamento < 30) {
+            div_financiamento.innerHTML = `
+        A prestação corresponde a ${porcentFinanciamento}% da renda familiar
+        `
+        }
+        if (porcentFinanciamento > 30) {
+            div_financiamento.innerHTML = `
+                A prestação corresponde a ${porcentFinanciamento}% da renda familiar <br>
+        `
+            div_cor_texto.innerHTML = `
+            <b>Será necessário complementar a renda familiar</b>
+        `
+        }
+    }
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite o nome do aluno: </span><input id="input_nome_aluno" type="text"> <br>
+    <span>Digite a idade do aluno: </span><input id="input_idade_aluno" type="t/ext"> <br>
+
+    <button onclick="exibir()">Avaliar aluno</button> <br>
+    <div id="div_idade"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var nomeAluno = input_nome_aluno.value;
+        var idadeAluno = Number(input_idade_aluno.value);
+        
+        if(idadeAluno >= 18){
+            div_idade.innerHTML = `
+            ${nomeAluno} vamos tirar a CNH?
+            `
+        }else{
+            div_idade.innerHTML = `
+            ${nomeAluno} vai jogar PlayStation!
+            `
+        }
+    }
+
+</script>

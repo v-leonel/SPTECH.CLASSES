@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Digite a primeira nota</span><input type="text" id="input_nota1"><br>
+    <span>Digite a segunda nota</span><input type="text" id="input_nota2"><br>
+
+    <button onclick="exibir()">Verificar situação</button>
+
+    <div id="div_media"></div>
+</body>
+</html>
+<script>
+
+    function exibir(){
+        var n1 = Number(input_nota1.value);
+        var n2 = Number(input_nota2.value);
+        var media = (n1 + n2) / 2
+
+        if(media >=6){
+            div_media.innerHTML = `
+            Parabens, aprovado! 
+            `
+        }else{
+            div_media.innerHTML = `
+            Tente outra vez
+            `
+        }
+    }
+
+</script>
