@@ -1,0 +1,8 @@
+ATIVIDADE 
+
+iniciar a construção do documento de projeto seguindo as orientações apresentadas em aula
+este documento deve apresentar de forma estruturada: a Capa (nome do projeto, nome da disciplina, mes/ano, nome completo), Contexto, Objetivo, Justificativam, Escopo, permissões / Restrições.
+
+Trabalho em grupo, entregue ao professor via Moodle até 05/09 as 23:59;
+Arquivo formato Word - Evoluir documento da atividade anterior,
+Nomenclatura do arquivo para subir no Moodle: TI-Aula-grupoxx.docx;
