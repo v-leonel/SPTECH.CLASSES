@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="340b3de6-1544-41c6-82b7-1fd1012b0100" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../lista-introducao-poo/src/main/java/confeitaria/Bolo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mini-desafio-poo/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mini-desafio-poo/src/main/java/Cofrinho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atividade01-ac01-v-leonel" beforeDir="false" afterPath="$PROJECT_DIR$/../atividade01-ac01-v-leonel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../projeto-nivelamento/src/main/java/orientacaoObjeto/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../projeto-nivelamento/src/main/java/orientacaoObjeto/Teste.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2deZUdmlmeNwp9hZksvFoTlzzW6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/SPTECH.CLASSES/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lista-02-nivelamento-v-leonel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lista-02-nivelamento-v-leonel" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="340b3de6-1544-41c6-82b7-1fd1012b0100" name="Changes" comment="" />
+      <created>1710370521880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710370521880</updated>
+    </task>
+    <servers />
+  </component>
+</project>
