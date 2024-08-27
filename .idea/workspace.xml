@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a318e84-9212-4f4c-8e83-034409209ab4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/exemplo-enum/src/main/java/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/exemplo-enum/src/main/java/Plano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/exemplo-enum/src/main/java/Teste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/atividade01-ac01-v-leonel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/src/main/java/Atividade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/src/main/java/mini/desafio/Loja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/classe-uml/src/main/java/mini/desafio/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/encapsulamento/src/main/java/ContaBancaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/encapsulamento/src/main/java/Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/encapsulamento/src/main/java/confeitaria/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/encapsulamento/src/main/java/confeitaria/Bolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/src/main/java/school/sptech/lista01/Exercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/src/main/java/school/sptech/lista01/Exercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/src/main/java/school/sptech/lista01/Exercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/src/main/java/school/sptech/lista01/Exercicio04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/src/test/java/school/sptech/MainTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/target/classes/school/sptech/lista01/Exercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/target/classes/school/sptech/lista01/Exercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/target/classes/school/sptech/lista01/Exercicio03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-01-nivelamento-v-leonel/target/classes/school/sptech/lista01/Exercicio04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/Acumulador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/ContadorVariado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/Loteria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/NumerosImpares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/NumerosPares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/Potencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/Sorteio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/main/java/school/sptech/lista02/Votacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/src/test/java/school/sptech/MainTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/Acumulador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/ContadorVariado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/Loteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/NumerosImpares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/NumerosPares.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/Potencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/Sorteio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-02-nivelamento-v-leonel/target/classes/school/sptech/lista02/Votacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex01/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex01/Bolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex02/Emitir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex02/Encomenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex03/Empregado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex03/TesteEmpregado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex04/Termometro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/lista-introducao-poo/src/main/java/ex04/TesteTermometro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/mini-desafio-poo/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/mini-desafio-poo/src/main/java/Cofrinho.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/pet-shop/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/pet-shop/src/main/java/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/pet-shop/src/main/java/PetShop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/primeiro-projeto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/primeiro-projeto/src/main/java/PrimeiraClasse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/primeiro-projeto/target/classes/PrimeiraClasse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/NivelamentoCondicionais.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/NivelamentoLacosRepeticao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/OperadoresMatematicos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/TiposNivelamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/orientacaoObjeto/BilheteUnico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/src/main/java/orientacaoObjeto/Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/target/classes/NivelamentoCondicionais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/projeto-nivelamento/target/classes/NivelamentoLacosRepeticao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca-relacionamento/src/main/java/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca-relacionamento/src/main/java/ContaBancaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca-relacionamento/src/main/java/ContaCorrente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca-relacionamento/src/main/java/ContaPoupanca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca-relacionamento/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca/src/main/java/Aluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca/src/main/java/AlunoPos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/heranca/src/main/java/TesteAluno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/relacionamento/src/main/java/AdicionarMuitos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/relacionamento/src/main/java/Contato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/relacionamento/src/main/java/Grupo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint 2/relacionamento/src/main/java/Whatsapp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint1/atividade01-ac01-v-leonel/src/main/java/school/sptech/Ex4DesafioNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint1/atividade01-ac01-v-leonel/src/main/java/school/sptech/Ex4DesafioNumeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/ac02-pratica-v-leonel/src/main/java/school/sptech/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/ac02-pratica-v-leonel/src/main/java/school/sptech/Compra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/ac02-pratica-v-leonel/src/main/java/school/sptech/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/ac02-pratica-v-leonel/src/main/java/school/sptech/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/exercicio-relacionamento-v-leonel/src/main/java/school/sptech/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/exercicio-relacionamento-v-leonel/src/main/java/school/sptech/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/exercicio-relacionamento-v-leonel/src/main/java/school/sptech/OperacaoBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint2/exercicio-relacionamento-v-leonel/src/main/java/school/sptech/OperacaoBancaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint3/exercicio-classe-abstrata-v-leonel" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint3/exercicio-classe-abstrata-v-leonel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint3/exercicio-classe-abstrata-v-leonel/src/main/java/school/sptech/Retangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2ADSB/2S-LinguagemProgramacao/sprint3/exercicio-classe-abstrata-v-leonel/src/main/java/school/sptech/Retangulo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2gWNT6W448NkV2XzvYZ2TftR9ja" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/SPTECH.CLASSES"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a318e84-9212-4f4c-8e83-034409209ab4" name="Changes" comment="" />
+      <created>1715809378421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715809378421</updated>
+    </task>
+    <servers />
+  </component>
+</project>

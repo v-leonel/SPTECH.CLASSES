@@ -1,0 +1,9 @@
+// DESAFIO
+// Criar um vetor de String ja inicializado com os dias da
+semana "domingo", "segunda", "terça", "Quarta",
+"Quinta", "Sexta",
+"Sabado"
+// Solicitar que o usuário digite um valor de 1 a 7
+// Fique em Loop até que o usuário digite um valor válido
+// Exibir o dia da semana correspondente, usando o vetor
+// de forma que 1 é domingo, 2 é segunda, etc.

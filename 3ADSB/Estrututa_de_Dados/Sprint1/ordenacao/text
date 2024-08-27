@@ -1,0 +1,20 @@
+public void selectionsort(int array[])
+{
+    int n = array.length;            //método para calcular o tamanho do array
+    for (int i = 0; i < n-1; i++)
+    {
+        int index = i;
+        int min = array[i];          // tomando o elemento min como i-ésimo elemento do array
+        for (int j = i+1; j < n; j++)
+        {
+            if (array[j] < array[index])
+            {
+                index = j;
+                min = array[j];
+            }
+        }
+        int t = array[index];         //Troque os elementos de lugar
+        array[index] = array[i];
+        array[i] = t;
+    }
+}
