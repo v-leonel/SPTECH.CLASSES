@@ -1,0 +1,48 @@
+var container = document.getElementById("root");
+
+function Participante(props) {
+    const [numero, setNumero] = React.useState(0);
+
+    function votar() {
+        setNumero(numero + 1);
+        props.onVotar();
+    }
+
+    return (
+        <>
+            <div>
+                <h2>{props.nome}</h2>
+                <h3>{numero}</h3>
+                <button onClick={votar}>Votar</button>
+            </div>
+        </>
+    );
+}
+
+function TotalVotos(props) {
+    return (
+        <div>
+            <h2>Total de Votos: {props.total}</h2>
+        </div>
+    );
+}
+
+function Votacao() {
+    const [totalVotos, setTotalVotos] = React.useState(0);
+
+    function incrementarVotos() {
+        setTotalVotos(totalVotos + 1);
+    }
+
+    return (
+        <>
+            <h1>Participantes</h1>
+            <Participante nome="Blue Pen" onVotar={incrementarVotos} />
+            <Participante nome="Blue Red" onVotar={incrementarVotos} />
+            <Participante nome="Blue Orange" onVotar={incrementarVotos} />
+            <TotalVotos total={totalVotos} />
+        </>
+    );
+}
+
+ReactDOM.createRoot(container).render(<Votacao />);
