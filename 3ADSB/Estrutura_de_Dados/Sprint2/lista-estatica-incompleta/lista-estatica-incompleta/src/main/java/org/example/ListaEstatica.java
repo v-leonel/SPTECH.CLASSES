@@ -47,6 +47,13 @@ public class ListaEstatica {
         return removePeloIndice(busca(elemento));
     }
 
+    public void substitui(int valorAntigo, int valorNovo){
+        int indice = busca(valorAntigo);
+        if (indice != -1){
+            vetor[indice] = valorNovo;
+        }
+    }
+
     public int getNroElem() {
         return nroElem;
     }

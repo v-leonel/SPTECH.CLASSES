@@ -9,7 +9,7 @@ public class ListaEstatica {
 
     public void adiciona(int elemento) {
         if (nroElem >= vetor.length) {
-            System.out.println("Lista cheia");
+            throw new IllegalStateException("Lista cheia");
         } else {
             vetor[nroElem++] = elemento;
         }
@@ -30,34 +30,52 @@ public class ListaEstatica {
         }
         return -1;
     }
-    public int removePeloIndice(int tipo){
-        if (tipo == 1){
-            int aux = vetor[0];
-            for (int i = 0; i < nroElem - 1; i++) {
-                vetor[i] = vetor[i + 1];
+    public boolean removePeloIndice(int indice){
+        if (indice < 0 || indice >= nroElem) {
+            return false;
+        }
+        for (int i = indice; i < nroElem - 1; i++) {
+            vetor[i] = vetor[i + 1];
+        }
+        nroElem--;
+        return true;
+    }
+
+    public boolean removeElemento(int elemento){
+        return removePeloIndice(busca(elemento));
+    }
+
+    public void substitui(int valorAntigo, int valorNovo) {
+        int indice = busca(valorAntigo);
+        if (indice != -1) {
+            vetor[indice] = valorNovo;
+        }
+        if (valorAntigo == -1) {
+            {
+                throw new IllegalArgumentException("Elemento não encontrado");
             }
-            nroElem--;
-            return aux;
-        } else if (tipo == 2){
-            int aux = vetor[nroElem - 1];
-            nroElem--;
-            return aux;
-        } else {
-            return -1;
         }
     }
-    public int removeElemento(boolean tipo){
-        if (tipo){
-            int aux = vetor[0];
-            for (int i = 0; i < nroElem - 1; i++) {
-                vetor[i] = vetor[i + 1];
+
+    public int contaOcorrencias(int ocorrencia){
+        int contador = 0;
+        for (int i = 0; i < nroElem; i++) {
+            if (vetor[i] == ocorrencia) {
+                contador++;
             }
-            nroElem--;
-            return aux;
+        }
+        return contador;
+    }
+
+    public void adicionaNoInicio(int elemento){
+        if (nroElem >= vetor.length) {
+            throw new IllegalStateException("Lista cheia");
         } else {
-            int aux = vetor[nroElem - 1];
-            nroElem--;
-            return aux;
+            for (int i = nroElem; i > 0; i--) {
+                vetor[i] = vetor[i - 1];
+            }
+            vetor[0] = elemento;
+            nroElem++;
         }
     }
 }

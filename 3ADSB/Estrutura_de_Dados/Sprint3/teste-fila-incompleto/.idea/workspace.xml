@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e26b93b-b08a-47b1-b9c0-f3fd49dc2109" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Sprint2/lista-estatica/src/main/java/ListaEstaticaOrdenada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sprint1/03-exercicio-ordenacao-com-tema-v-leonel" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sprint1/03-exercicio-ordenacao-com-tema-v-leonel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sprint2/lista-estatica-incompleta/lista-estatica-incompleta/src/main/java/org/example/ListaEstatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sprint2/lista-estatica-incompleta/lista-estatica-incompleta/src/main/java/org/example/ListaEstatica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sprint2/lista-estatica/src/main/java/ListaEstatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sprint2/lista-estatica/src/main/java/ListaEstatica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sprint2/lista-estatica/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sprint2/lista-estatica/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sprint2/zipados/lista-estatica.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sprint2/zipados/lista-estatica.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Programacao-Web" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programacao-Web" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tecnologias-emergentes/music-box-3-adsb-2024-2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tecnologias-emergentes/music-box-3-adsb-2024-2" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2oUaRGshANdfa3XmGpzRzBN8Adx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/SPTECH.CLASSES/3ADSB/Estrutura_de_Dados/Sprint3/teste-fila-completo"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="FilaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-fila-incompleto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FilaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FilaTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e26b93b-b08a-47b1-b9c0-f3fd49dc2109" name="Changes" comment="" />
+      <created>1730926597486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730926597486</updated>
+    </task>
+    <servers />
+  </component>
+</project>
